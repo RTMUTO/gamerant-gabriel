@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Image } from '../../models/image';
 
-interface carouselImage {
+/* interface carouselImage {
   src: string;
   alt: string;
-}
+} */
 
 @Component({
   selector: 'app-carosello',
@@ -14,7 +15,7 @@ interface carouselImage {
   styleUrl: './carosello.component.css',
 })
 export class CaroselloComponent {
-  @Input() images: carouselImage[] = [];
+  @Input() images: Image[] = [];
   @Input() indicators = true;
   @Input() controls = true;
   selectedIndex = 0;

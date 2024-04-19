@@ -8,6 +8,11 @@ module.exports = {
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],
       },
+
+      transitionProperty: {
+        'height': 'height',
+        'spacing': 'margin, padding',
+      }
     },
   },
   plugins: [],

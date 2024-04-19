@@ -2,7 +2,7 @@
 
 <div
   id="carousel-container"
-  class="relative m-auto text-center w-2/3 rounded-lg shadow-2xl"
+  class="relative m-auto text-center w-5/6 rounded-lg shadow-2xl"
 >
   @for(image of images; track image.src; let i = $index){
   <img
@@ -17,16 +17,16 @@
     class="absolute top-0 bottom-0 left-0 right-0 flex justify-between items-center px-3"
   >
     <!-- Freccia sinistra -->
-    <i 
+    <i
       class="fas fa-chevron-left text-white text-3xl cursor-pointer"
       (click)="onPrevClick()"
-      ></i>
+    ></i>
 
     <!-- Freccia Destra -->
-    <i 
+    <i
       class="fas fa-chevron-right text-white text-3xl cursor-pointer"
       (click)="onNextClick()"
-      ></i>
+    ></i>
   </div>
   } @if(indicators){
   <div

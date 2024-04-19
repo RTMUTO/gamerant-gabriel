@@ -1,0 +1,33 @@
+<div class="grid grid-cols-1 md:grid-cols-2 bg-white shadow-lg rounded-lg overflow-hidden">
+    <!-- Image container with responsive padding and full height image -->
+    <div class="relative">
+      <img src="../../../assets/silentHillPoster.jpg" alt="Silent Hill 2 Remake" class="p-5 w-full h-full object-cover">
+    </div>
+  
+    <!-- Information container with responsive flex layout -->
+    <div class="flex flex-col p-4 md:p-6 space-y-4 bg-slate-100 text-black shadow-xl">
+        <h2 class="text-3xl text-orange-600 font-bold underline">Silent Hill Remake</h2>
+
+        <div class="grid grid-cols-2 gap-4">
+            <p class="text-sm sm:text-base font-semibold">Franchise:</p>
+            <p class="text-sm sm:text-base">{{title}}</p>
+            <hr class="col-span-2">  <!-- Linea orizzontale che copre entrambe le colonne -->
+            
+            <p class="text-sm sm:text-base font-semibold">Platform(s):</p>
+            <p class="text-sm sm:text-base">{{platforms}}</p>
+            <hr class="col-span-2">
+            
+            <p class="text-sm sm:text-base font-semibold">Developer(s):</p>
+            <p class="text-sm sm:text-base">{{developers}}</p>
+            <hr class="col-span-2">
+            
+            <p class="text-sm sm:text-base font-semibold">Publisher(s):</p>
+            <p class="text-sm sm:text-base">{{publisher}}</p>
+            <hr class="col-span-2">
+            
+            <p class="text-sm sm:text-base font-semibold">Genre(s):</p>
+            <p class="text-sm sm:text-base">{{genres}}</p>
+            <!-- Nessun hr dopo l'ultima coppia, per evitare una linea extra alla fine -->
+        </div>
+    </div>
+</div>
